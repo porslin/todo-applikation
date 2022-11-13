@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #ffc0cb;
+  color: #721d39;
+  min-height: 90vh;
+}
+
+header {
+  font-size: 1rem;
+}
+
+header,
+form,
+h3 {
+  min-height: 10vh;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  min-width: 60%;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #ffe4e1;
+  border: none;
+  border-radius: 10px;
+  color: #721d39;
+  cursor: pointer;
+}
+
+form button {
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #721d39;
+  color: #ffe4e1;
+}
+
+.todo-container,
+.done-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list,
+.done-list {
+  min-width: 60%;
+  list-style: none;
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+
+.done-list {
+  background: #f7a8b4;
+  border-radius: 10px;
+}
+
+/* inget stöd för firefox såklart. h11 1e. */
+ul::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+.todo {
+  margin: 0.5rem;
+  color: #721d39;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.todo li,
+.newinput {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #ffe4e1;
+  border: none;
+  border-radius: 10px;
+  color: #721d39;
+  flex: 76%;
+}
+
+.edit-btn,
+.complete-btn,
+.delete-btn {
+  background: #ffe4e1;
+  color: #721d39;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  flex: 8%;
+}
+
+.edit-btn,
+.complete-btn,
+.delete-btn {
+  transition: all 0.3s ease;
+}
+.edit-btn:hover,
+.complete-btn:hover,
+.delete-btn:hover {
+  background: #721d39;
+  color: #ffe4e1;
+}
